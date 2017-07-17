@@ -1,0 +1,23 @@
+1.- Primero copiar la carpeta "Upload" en app/Plugin/
+2.- Cargar el plugin en app/Config/bootstrap.php con la siguiente linea al final del archivo "CakePlugin::load('Upload');"
+3.- Copia este codigo en el modelo que quieres que suba las imagenes:
+
+	public $actsAs = array(
+		'Upload.Upload' => array(
+			'photo' => array(
+				'thumbnailSizes' => array(
+					'xvga' => '1024x768',
+					'vga' => '640x480',
+					'thumb' => '80x80'
+				),
+				'thumbnailMethod'	=> 'php'
+			)
+		)
+	);
+
+	donde "photo" es el campo de la bd donde se guardara la imagen, puedes agregar o quitar tamaños de los thumbs
+	o quitarlos completamente
+
+	Listo!!
+
+BY RENE GUMIEL
