@@ -1,0 +1,48 @@
+/*iphone 6 plus*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) { 
+	.progress-ios{
+		margin-top: 15px;
+	}
+	
+	
+	#search-group {
+		background: #fff;
+		border-bottom:none;
+		padding:10px;
+		width:100%;
+		
+	}
+	
+ }
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+	.progress-ios{
+		margin-top: 15px;
+	}
+}
+
+
+/*Iphone 6*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+	.progress-ios{
+		margin-top: 15px;
+	}
+ }
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+	.progress-ios{
+		margin-top: 15px;
+	}
+}
